@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Portal das Formas</title>
+    <link rel="stylesheet" href="Assets/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="Assets/JS/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <a href="index.html"> O Portal <span>das</span> Formas</a>
+            <div class="loader" >
+                <svg viewBox="0 0 80 80">
+                    <circle r="32" cy="40" cx="40" id="test"></circle>
+                </svg>
+            </div>
+            
+            <div class="loader triangle">
+                <svg viewBox="0 0 86 80">
+                    <polygon points="43 8 79 72 7 72"></polygon>
+                </svg>
+            </div>
+            
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <rect height="64" width="64" y="8" x="8"></rect>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="calculo">
+            <img src="Assets/Images/Icons/romboedro-calculo.jpeg" alt="">
+            <div class="resultado">
+                <h1>Romboedro</h1>
+                <label for="input_rombD">Digite a maior distância entre as pontas do Romboedro: </label>
+                <input type="number" id="input_rombD" required>
+                <label for="input_rombd">Digite a menor distância entre as pontas do Romboedro: </label>
+                <input type="number" id="input_rombd" required>
+            </div>
+            <div class="botao">
+                <button type="btn_romb" onclick="calcularRomboedro()">Calcular</button>
+            </div>
+            <h3 id="romb_rsl"></h3>
+
+        </div>
+    </main>
+
+
+
+</body>
+</html>
